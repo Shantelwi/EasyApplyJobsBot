@@ -1,11 +1,11 @@
 # General bot settings to use Pro settings you need to download Pro version from: www.automated-bots.com
 
 #PRO FEATURE - browser you want the bot to run ex: ["Chrome"] or ["Firefox"]. Firefox is only supported in Pro feature
-browser = ["Chrome"]
+browser = ["Chrome", "Microsoft Edge"]
 # Enter your Linkedin password and username below. Do not commit this file after entering these credentials.
 # Linkedin credentials
-email = "YourLinkedin@UserEmail.com"
-password = "YourLinkedinPassword"
+email = "williamsshantel35@yahoo.com"
+password = "U!GbVhc!nmgT69s"
 
 #PRO FEATURE - Optional! run browser in headless mode, no browser screen will be shown it will work in background.
 headless = False
@@ -20,7 +20,7 @@ chromeProfilePath = r""
 # continent locations:["Europe", "Asia", "Australia", "NorthAmerica", "SouthAmerica", "Africa", "Australia"]
 location = ["NorthAmerica"]
 # keywords related with your job search
-keywords = ["frontend", "react", "typescript","javascript", "vue", "python", "programming", "blockchain"]
+keywords = ["frontend", "react", "backend","javascript", "mongoDB", "python", "programming", "API", "Software Development"]
 #job experience Level - ex:  ["Internship", "Entry level" , "Associate" , "Mid-Senior level" , "Director" , "Executive"]
 experienceLevels = [ "Entry level" ]
 #job posted date - ex: ["Any Time", "Past Month" , "Past Week" , "Past 24 hours"] - select only one
@@ -55,7 +55,7 @@ blockHiringMember = []
 #PRO FEATURE! - Only apply the job sposted by the Hiring member contains this in his/her name - ex: ["adam","Sarah"]
 onlyApplyHiringMember = [] 
 #PRO FEATURE! - Only apply jobs having less than applications - ex:["100"] will apply jobs having upto 100 applications 
-onlyApplyMaxApplications = []
+onlyApplyMaxApplications = [10]
 #PRO FEATURE! - Only apply jobs having more than applications - ex:["10"] will apply jobs having more than 10 applications 
 onlyApplyMinApplications = []
 #PRO FEATURE! - Only apply jobs having these keywords in the job description

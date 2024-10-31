@@ -15,6 +15,9 @@ class Linkedin:
             self.driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()),options=utils.chromeBrowserOptions())
             self.cookies_path = f"{os.path.join(os.getcwd(),'cookies')}/{self.getHash(config.email)}.pkl"
             self.driver.get('https://www.linkedin.com')
+            cookies_dir = os.path.dirname(self.cookies_path)
+            if not os.path.exists(cookies_dir):
+                os.makedirs(cookies_dir)
             self.loadCookies()
 
             if not self.isLoggedIn():
@@ -151,7 +154,7 @@ class Linkedin:
 
 
             utils.prYellow("Category: " + urlWords[0] + "," +urlWords[1]+ " applied: " + str(countApplied) +
-                  " jobs out of " + str(countJobs) + ".")
+                " jobs out of " + str(countJobs) + ".")
         
         utils.donate(self)
 
